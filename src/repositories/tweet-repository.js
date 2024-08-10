@@ -24,6 +24,7 @@ class TweetRepository extends CrudRepository {
 
     async getTweet(id) {
         try {
+            console.log(id)
             const tweet = await Tweet.findById(id);
             return tweet;
 

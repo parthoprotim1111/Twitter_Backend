@@ -20,11 +20,12 @@ class HashRepository extends CrudRepository {
     }
 
 
-    async getTagByName(text) {
+    async findByName(text) {
         try {
             const hash = await Hashtag.find({
                 text: text
             })
+            return hash;
         } catch (error) {
 
         }

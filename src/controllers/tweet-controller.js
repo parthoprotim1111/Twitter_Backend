@@ -31,8 +31,9 @@ async function createTweet(req, res) {
 
 async function getTweet(req, res) {
     try {
-        const id = req.params.id;
-        const response = await tweetService.getTweet(id);
+        const id = req.body.id;
+        console.log(id);
+        const response = await twtService.getTweet(id);
         return res.status(StatusCodes.OK).json({
             success: true,
             meassage: "Successfully found the tweet",
