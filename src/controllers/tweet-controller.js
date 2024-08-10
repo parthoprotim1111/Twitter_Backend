@@ -1,4 +1,4 @@
-const { tweetService } = require('../service');
+const { tweetService } = require('../services');
 const { StatusCodes } = require('http-status-codes')
 
 const twtService = new tweetService();

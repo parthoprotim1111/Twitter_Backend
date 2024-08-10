@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { tweetController } = require('../../controller')
+const { tweetController } = require('../../controllers')
 
 
 

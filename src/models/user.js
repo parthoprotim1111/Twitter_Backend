@@ -31,7 +31,7 @@ const userSchema = new Schema({
 userSchema.pre('save', function (next) {
     const user = this;
     const salt = bcrypt.genSaltSync(9);
-    const encryptedPass = bcrypt.hashSync(user.password.salt);
+    const encryptedPass = bcrypt.hashSync(user.password, salt);
     user.password = encryptedPass;
     next();
 

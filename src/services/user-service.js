@@ -3,7 +3,7 @@ const { userRepository } = require('../repositories')
 
 const userRepo = new userRepository();
 
-async function create(data) {
+async function signUp(data) {
 
     try {
         const user = await userRepo.create(data);
@@ -14,4 +14,8 @@ async function create(data) {
     }
 
 
+}
+
+module.exports = {
+    signUp
 }

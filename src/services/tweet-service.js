@@ -1,4 +1,4 @@
-const { tweetRepository, tagRepository } = require('../repository');
+const { tweetRepository, tagRepository } = require('../repositories');
 
 
 

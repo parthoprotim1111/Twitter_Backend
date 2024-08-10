@@ -1,7 +1,7 @@
 const express = require('express');
 const { serverConfig, dbConfig } = require('./config')
 const mongoose = require('mongoose')
-const { tweetRepository } = require('./repository')
+const { tweetRepository } = require('./repositories')
 
 const apiRoute = require('./routes');
 // const {Tweet} = require('./models');
